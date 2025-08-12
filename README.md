@@ -1,4 +1,4 @@
-# InterviewPrep is my entire I am using to prepare for tech jobs, this is for developers who went to academia for a while and are looking to reskill or upskill for the industry. There are two main folders here, the leetcode part and then the react-apps folder. 
+# InterviewPrep is the entire roadmap I am using to prepare for tech jobs, this is for developers who went to academia for a while and are looking to reskill or upskill for the industry. There are two main folders here, the leetcode folder and then the react-apps folder. 
 
 ## LeetCode
 This contains all LeetCode problems and will be broken down into different folders based on data structure, and difficulty level. I will try to leave as much comments as possible in my codes to make it easier for others to understand. I might also include a folder for company specific problems I have solved. This won't be your only resource as you will need to actually read documentations and do your own practice, but this should be a good blueprint to get you feeling confident. 
