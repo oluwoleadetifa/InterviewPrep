@@ -1,28 +1,9 @@
-import Square from "./components/Square"
-import { useState } from "react"
-import './App.css'
-
-/* you'll notice I created a component called square,
-this is to ensure that the squares are their own component, doing their own thing.
-export default shows what function you want to reuse in other files.
-To create your body to be bonita like mine, you can use vanlla css or use tailwindcss
-I'm not use tailwind because I don't really need to for this project.
-*/
-
-
-
-export default function Board() {  
-  const [squares, setSquares] = useState([Array(9).fill(null)])
-  const [xIsNext, setXIsNext] = useState(true)
+export default function Board({ xIsNext, squares, onPlay }) {  
   // const [ winner, setWinner] = useState(null)
 
   /* You will see me use arrow functions instead of this, that is because
   arrow functions are more concise and easier to read. Also the this referencing,
   and i can also do argument unpacking with them. */
-
-  const reset = () => {
-    setSquares([Array(9).fill(null)])
-  }
 
   const calculateWinner = (squares) => {
     // I looked at all possible ways to win tic-tac-toe, once I found a winner, GGs
@@ -65,8 +46,7 @@ export default function Board() {
         nextSquares[i] = "O"
       }
       
-      setSquares(nextSquares)
-      setXIsNext(!xIsNext)
+      onPlay(nextSquares);
     }
   }
   const winner = calculateWinner(squares)
@@ -78,10 +58,7 @@ export default function Board() {
    }
   return (  
     <>
-      <div className="status">
-        <p>{status}</p>
-        {winner ? <button className="reset-btn" onClick={reset}>reset</button>: null}
-      </div>
+    <div className="status">{status}</div>
     <div className="board">
       <div className="board-row">
         <Square value={squares[0]} handleClick={(e)=>handleClick(e, 0)}/>
