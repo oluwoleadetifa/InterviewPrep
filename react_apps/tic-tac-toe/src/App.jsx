@@ -77,7 +77,7 @@ export default function Board() {
     status = 'Next player: ' + (xIsNext ? 'X' : 'O');
    }
   return (  
-    <>
+    <div className="game">
       <div className="status">
         <p>{status}</p>
         {winner ? <button className="reset-btn" onClick={reset}>reset</button>: null}
@@ -99,6 +99,6 @@ export default function Board() {
         <Square value={squares[8]} handleClick={(e)=>handleClick(e, 8)}/>
       </div>
     </div>
-    </>
+    </div>
   )
 }
