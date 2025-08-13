@@ -22,6 +22,7 @@ export default function Board() {
 
   const reset = () => {
     setSquares([Array(9).fill(null)])
+    setXIsNext(true)
   }
 
   const calculateWinner = (squares) => {

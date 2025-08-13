@@ -17,4 +17,5 @@ I found in a post dated 2025 that standard React plugin offers more stability th
 - SWC can generate code that are technically correct but do not align with standard practices.
 - SWC can be difficult in debugging. And the ecosystem compatibility can be limited. 
 
-Anyways, this is a simple app to get you to learn the basics of React. 
+Anyways, this is a simple app to get you to learn the basics of React.
+You will learn about components, and useState Hook
