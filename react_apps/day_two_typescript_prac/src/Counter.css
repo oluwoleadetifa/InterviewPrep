@@ -1,5 +1,0 @@
-@import "tailwindcss";
-
-.btn{
-  @apply rounded-2xl text-white text-2xl w-[60%] cursor-pointer py-[3%] hover:opacity-75 flex justify-center items-center my-0 mx-auto;
-}

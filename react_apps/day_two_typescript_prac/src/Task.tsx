@@ -7,27 +7,35 @@ const Task: React.FC = () => {
       <p>
         <ul>
           <li>
-            <strong>Core Focus:</strong> Solidify the absolute essentials.
+            <strong>Core Focus:</strong> Mastering state flow and user interactions.
           </li>
           <li>
             <strong>Review:</strong><br />
             <ul>
               <li>
-                <strong>TypeScript:</strong> This is not optional. Practice with types for props, state, and functions. Understand interface vs. type.
+                useState with functional updates (setCount(prevCount ={'>'} prevCount + 1)).
+
               </li>
               <li>
-                <strong>React:</strong> Functional components, props, and JSX syntax.
+                Controlled components (forms) for {'<input>, <textarea>, <select>.'}
               </li>
               <li>
-                <strong>ES6+ JS:</strong> Arrow functions, destructuring, template literals, and array methods (map, filter, reduce).
+                Event handling (onChange, onClick, onSubmit).
+              </li>
+              <li>
+                <strong>Pro Tip:</strong> Be ready to talk about the difference between controlled and uncontrolled components.
               </li>
             </ul>
           </li>
           <li>
             <strong>Practice</strong>
             <ul>
-              <li>Challenge 1: Build a counter with two buttons (Increment/Reset). Implement this using TypeScript from the start, typing your state and props.</li>
-              <li>Challenge 2: A simple list of items (e.g., names). Render the list and add a button to reverse the order.</li>
+              <li>Challenge 3: Build a Todo app.
+                <li>Add new todos.</li>
+                <li>Mark them as complete (toggle the complete status).</li>
+                <li>Delete todos.</li>
+                <li>Augment: Use TypeScript to define a Todo interface (e.g., {'{id: string; text: string; completed: boolean;}'})</li>
+              </li>
             </ul>
           </li>
         </ul>

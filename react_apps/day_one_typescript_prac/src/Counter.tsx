@@ -5,7 +5,7 @@ import './Counter.css';
 const Counter: React.FC = () => {
   const [digit, setDigit] = useState<number>(0);
   const handleIncrement = () => {
-    setDigit(digit + 1);
+    setDigit(digit => digit + 1);
   }
   const handleReset = () => {
     setDigit(0)
